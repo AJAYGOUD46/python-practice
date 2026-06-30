@@ -1,5 +1,34 @@
+class Vehicle {
+    void start() {
+        System.out.println("this is a mechine");
+    }
+}
+
+class Car extends Vehicle {
+    void start() {
+        System.out.println("car start with key");
+    }
+}
+
+class Bike extends Vehicle {
+    void start() {
+        System.out.println("Bike start with self");
+    }
+}
+
 public class Student {
     public static void main(String[] args) {
-System.out.println("hello my name is ajay - edited");    }
-    
+
+        Vehicle [] vs = {
+
+            new Bike(),
+            new Car()
+          };
+
+        for (Vehicle vehicle : vs) {
+            
+            vehicle.start();
+        }
+
+    }  
 }
